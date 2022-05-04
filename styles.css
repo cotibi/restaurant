@@ -1,0 +1,111 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Roboto', sans-serif;
+}
+
+#offsetTop {
+    background-image: url("food.jpg");
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    padding: 100px;
+}
+
+#navbar {
+    overflow: hidden;
+    background-color: #333;
+    display: block;
+    box-shadow: 0px 2px 20px;
+}
+
+#navbar a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+#navbar a.active {
+    background-color: #04AA6D;
+    color: white;
+}
+
+#navbar a {
+    display: inline-block;
+    text-decoration: none;
+    padding: 10px 25px;
+    color: white;
+}
+
+#right {
+    float: right;
+    background-color: red;
+}
+
+/*Adds sticky navbar*/
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.sticky + #grid-container-main {
+    padding-top: 35px;
+  }
+
+#grid-container-main {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.sub-row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+[class*="col-"] {
+    padding: 0px;
+    margin: 10px;
+    border: 1px solid rgb(139, 139, 139);
+    box-shadow: 0px 3px 10px;
+    min-height: 300px;
+    min-width: 300px;
+    max-width: 300px;
+    max-height: 300px;
+}
+
+
+.col-1 {
+    display:flex;
+    flex-direction: column;
+    overflow: hidden;
+
+}
+
+.image {
+    object-fit: cover;
+    height: 50%;
+}
+
+.text{
+    margin-top: 5%;
+    height: 50%;
+    text-align: center;
+}
+.text > p {
+    margin-top: 10px;
+    font-size: 15px;
+}
+
+.price {
+    font-weight: bold;
+    margin-top: 5%;
+    margin-right: 10%;
+    text-align: right;
+    height: 10%;
+    font-size: 18px;
+}
